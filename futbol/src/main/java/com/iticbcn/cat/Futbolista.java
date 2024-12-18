@@ -8,7 +8,8 @@ public class Futbolista extends Thread {
     private int ngols;
     private int ntirades;
 
-    public Futbolista (int ngols, int ntirades) {
+    public Futbolista (int ngols, int ntirades, String nom) {
+        super(nom);
         this.ngols = 0;
         this.ntirades = 0;
     }
@@ -20,5 +21,5 @@ public class Futbolista extends Thread {
     public int getNtirades() {
         return ntirades;
     }
-    
+
 }
